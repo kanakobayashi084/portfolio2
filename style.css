@@ -35,6 +35,30 @@
     border: 2px #000 solid;
     cursor: pointer;
 }
-  .indicator li:first-of-type {
+.indicator li:first-of-type {
     background-color: #CC0000;
+}
+.waittime_inner {
+    display: flex;
+}
+.top_menulist {
+    display: flex;
+}
+.main_head {
+    text-align: center;
+    font-size: 150%;
+    letter-spacing: 0.15em;
+}
+.main_head span {
+    color: #E60012;
+}
+.slide_news {
+    display: flex;
+}
+.btn_more {
+    text-align: center;
+}
+.main_head2 {
+    text-align: center;
+    color: #666666;
 }
