@@ -2,13 +2,55 @@
 
 .header {
     width: 100%;
+    color: #FFFFFF;
+    background-color: #000;
 }
 .header_inner {
     padding: 0 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
+.header_logo {
+    padding: 12px 0;
+}
+.header_logo span {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+.txt_h_time {
+    font-size: 14px;
+    margin: 0 auto 0 2%;
+    padding: 0 0 0 28px;
+    background: url(images/icon/logo_ramen2.png) no-repeat 0 50%;
+}
+.btn_lang {
+    color: #FFFFFF;
+}
+.btn_lang li {
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+.btn_lang li a {
+    color: inherit;
+}
+.btn_time {
+    color: inherit;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    padding:8px 20px 8px 40px;
+    font-size: 12px;
+    background: url(images/icon/point_clock.png) no-repeat 10px 50%;
+    background-size: 20px auto; 
+    margin-left: 0.75em;
+    line-height: 1;
+}
+.btn_ramenmenu {
+    display: flex;
+    align-items: center;
+}
 /*main*/
 .slide-wrapper {
     width: 100%;
