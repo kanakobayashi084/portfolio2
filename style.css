@@ -41,6 +41,9 @@
 .btn_lang li a {
     color: inherit;
 }
+.all_more {
+    text-align: center;
+}
 .btn_time {
     color: inherit;
     border: 2px solid #FFFFFF;
@@ -193,7 +196,6 @@
     text-align: left;
     margin: 0 auto;
     position: relative;
-    margin:  0 200px;
 }
 .news_list {
     margin-bottom: 60px;
@@ -211,6 +213,23 @@
     max-width: 250px;
     border: 1px solid #333333;
     color: #333333;
+}
+.ramen_infomation {
+    background-color: #000000;
+}
+.ramen_infomation li {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
+.ramen_infomation a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+.ramen_infomation img {
+    width: 100%;
 }
 .main_head {
     text-align: center;
