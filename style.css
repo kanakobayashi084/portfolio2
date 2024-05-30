@@ -217,19 +217,38 @@
 .ramen_infomation {
     background-color: #000000;
 }
+.ramen_infomation ul {
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+}
 .ramen_infomation li {
     overflow: hidden;
     width: 50%;
     float: left;
 }
-.ramen_infomation a {
+.info_title {
     display: block;
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    padding: 60px 10px 90px 10px;
+    z-index: 2;
+}
+.info_link {
+    display: block;
+    color: #FFFFFF;
     position: relative;
 }
-.ramen_infomation img {
+.info_link img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.ramen_infomation .topic {
+    display: block;
     width: 100%;
+    position: relative;
 }
 .main_head {
     text-align: center;
