@@ -60,6 +60,16 @@
     align-items: center;
 }
 /*main*/
+.main_head span {
+    color: #E60012;
+}
+.main_head2 {
+    text-align: center;
+    color: #666666;
+    font-size: 32px;
+    letter-spacing: 0.25em;
+    margin-bottom: 32px;
+}
 .slide-wrapper {
     width: 100%;
     height: 100%;
@@ -213,6 +223,7 @@
     max-width: 250px;
     border: 1px solid #333333;
     color: #333333;
+    font-size: 14px;
 }
 .ramen_infomation {
     background-color: #000000;
@@ -251,6 +262,10 @@
     width: 100%;
     position: relative;
 }
+.top_lineup {
+    border-bottom: dashed 1px #666666;
+    padding: 60px 0;
+}
 .lineup_inner {
     width: 100%;
     padding: 0 10px;
@@ -262,7 +277,7 @@
 .main_head img {
     display: block;
     width: 60px;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px auto;
     position: relative;
 }
 .lineup {
@@ -312,8 +327,9 @@
     padding: 12px 4px 12px 25px;
     background-image: url(images/icon/point_ramen.png);
     background-size: auto 30px;
+    background-repeat: no-repeat;
 }
-.icon_taste {
+.icon_taste {  
     width: 100%;
     border-radius: 5px;
     border: 2px solid #875F34;
@@ -321,6 +337,7 @@
     padding: 12px 4px 12px 25px;
     background-image: url(images/icon/point_spoon.png);
     background-size: auto 30px;
+    background-repeat: no-repeat;
 }
 .ramen_exp {
     color: #000000;
@@ -328,16 +345,151 @@
     text-decoration: none;
     font-size: 12px;
 }
+.top_othershop {
+    padding: 60px 0;
+}
+.othershop_inner {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;    
+}
+.other_shop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.othershop_box {
+    width: 33%;
+    margin-bottom: 15px;
+}
+.othershop_box a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.othershop_box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.othershop_box h3 {
+    color: #E60012;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.othershop_box p {
+    color: #000000;
+    font-size: 12px;
+    line-height: 2;
+}
+.pic_insta {
+    margin: 60px 0;
+}
+.snslist {
+    margin-top: 28px;
+    text-align: center;
+    letter-spacing: 1.0em;
+}
+.sec_topnews {
+    padding: 60px 0;
+}
+.topnews_inner {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;      
+}
+.header_news {
+    width: 20%;
+    float: left;
+    padding-top: 50px;
+}
+.txt_box {
+    float: right;
+
+}
+.txt_box ul {
+    border-top: 1px solid #E6E6E6;
+    margin-bottom: 14px;
+}
+.txt_box li {
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 21px 0;
+}
+.txt_box span {
+    font-size: 14px;
+    color: #333333;
+}
+.top_accsess {
+    background-color: #fafafa;
+}
 .main_head {
     text-align: center;
     font-size: 30px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.25em;
     margin-bottom: 40px;
 }
-.main_head span {
+.top_accsess h3 {
     color: #E60012;
+    font-size: 20px;
 }
-.main_head2 {
-    text-align: center;
-    color: #666666;
+.top_link {
+    background: #eeeeee;
+    padding: 90px 0;
+}
+.toplink_inner {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;    
+}
+.top_link ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top_link li {
+    border: 1px solid #000000;
+}
+.top_link img {
+    width: 100%;
+    height: 100%;
+}
+/*footer*/
+.footer {
+    background: #333333;
+    width: 100%;
+    padding: 20px 0;
+}
+.footer_inner {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;   
+}
+.footer ul {
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.footer a {
+    padding: 0 12px;
+    border-left: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.footer p {
+    color: #FFFFFF;
+    margin-top: 12px;
+    font-size: 12px;
 }
