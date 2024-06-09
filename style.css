@@ -59,6 +59,93 @@
     display: flex;
     align-items: center;
 }
+.hamburger_menu {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.hamburger_menu span {
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    border-radius: 1px;
+}
+.hamburger_menu span:nth-of-type(1) {
+    top: 10px;
+}
+.hamburger_menu span:nth-of-type(2) {
+    top: 17px;
+}
+.hamburger_menu span:nth-of-type(3) {
+    top: 24px;
+}
+.hamburger_menu.open span:nth-of-type(1) {
+    transform: translateY(7px) rotate(-45deg);
+    width: 90%;
+}
+.hamburger_menu.open span:nth-of-type(2) {
+    opacity: 0;
+}
+.hamburger_menu.open span:nth-of-type(3) {
+    transform: translateY(-7px) rotate(45deg);
+    width: 90%;
+}
+.sptop_menu {
+    background-color: #e7e7e7;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+.sptop_menu_inner {
+    padding: 20px 10px;
+    margin: 0 200px;
+    text-align: left;
+    position: relative;
+}
+.sptop_menulist {
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+}
+.sptop_menulist  li {
+    width: 12.5%;
+    border-left: 2px solid #FFFFFF;
+    position: relative;
+}
+.sptop_menu a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+}
+.sptop_menu img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+.top_menu span {
+    display: block;
+    text-align: center;
+}
+.sptop_menu span {
+    display: block;
+    text-align: center;
+}
+.sptop_menu.open {
+    opacity: 1;
+    visibility: visible;
+}
 /*main*/
 .main_head {
     text-align: center;
@@ -116,8 +203,15 @@
     border: 1px #000000 solid;
     cursor: pointer;
 }
-.indicator li:first-of-type {
+
+.indicator li.active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    list-style: none;
     background-color: #CC0000;
+    border: 1px #000000 solid;
+    cursor: pointer;
 }
 .waittime_info {
     background-color: #000;
@@ -416,6 +510,45 @@
     padding: 60px 0;
     background-color: #fafafa;
 }
+.pic_insta_inner {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;   
+}
+.pic_insta ul {
+    display: flex;
+}
+.pic_insta li {
+    margin: 0 10px;
+}
+.prev {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 25%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #666;
+    border-right: solid 3px #666;
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+  }
+.next {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 25%;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #666666;
+    border-right: solid 3px #666666;
+    -webkit-transform: rotate(45deg) translateY(50%);
+    transform: rotate(45deg) translateY(50%);
+  }
 .snslist {
     margin-top: 28px;
     text-align: center;
