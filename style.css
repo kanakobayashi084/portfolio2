@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+html,body {
+    overflow-x: hidden;
+}
 .header {
     width: 100%;
     color: #FFFFFF;
@@ -347,7 +349,16 @@
     color: #000000;
     font-weight: bold;
     line-height: 1.5;
-
+}
+.button_prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.button_next {
+    position: absolute;
+    top: 40%;
+    right: 10%;
 }
 .all_more {
     text-align: center;
@@ -550,31 +561,71 @@
     width: 100%;
     height: 100%;
 }
-.prev {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    bottom: 25%;
-    z-index: 10;
+.arrow {
+    color:#666666;
+    position: relative;
+    display: inline-block;
     cursor: pointer;
-    border-top: solid 3px #666;
-    border-right: solid 3px #666;
-    -webkit-transform: rotate(-135deg) translateY(-50%);
-    transform: rotate(-135deg) translateY(-50%);
-  }
-.next {
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+.button_prev2 {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    bottom: 25%;
-    right: 20px;
-    z-index: 10;
-    cursor: pointer;
-    border-top: solid 3px #666666;
-    border-right: solid 3px #666666;
-    -webkit-transform: rotate(45deg) translateY(50%);
-    transform: rotate(45deg) translateY(50%);
-  }
+    top: 50%;
+    left: 0;
+    margin-top: 50px;
+}
+.prev::before {
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #666666;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.prev::after{
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	-webkit-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+.button_next2 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: 50px;
+}
+.next::before {
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #666666;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.next::after{
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 .snslist {
     margin-top: 28px;
     text-align: center;
