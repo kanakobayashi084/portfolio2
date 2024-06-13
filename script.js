@@ -19,7 +19,7 @@ function slide_time () {
 
 setInterval(slide_time,5000);
 
-('pic-slider').slick({
+$('slider').slick({
     autoplay:true,
     infinite: true,
     slidesToShow: 3,
