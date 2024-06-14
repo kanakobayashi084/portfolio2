@@ -681,7 +681,15 @@ html,body {
     position: relative;       
 }
 .accsess_body {
-display: flex;
+    display: flex;
+}
+.accsess_map {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.accsess_map iframe {
+    width: 100%;
 }
 .top_accsess h3 {
     color: #E60012;
