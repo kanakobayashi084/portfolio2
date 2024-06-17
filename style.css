@@ -6,7 +6,16 @@ html,body {
 .header {
     width: 100%;
     color: #FFFFFF;
-    background: #000000;
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+}
+.header.resize {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
 }
 .header_inner {
     padding: 0 10px;
@@ -100,6 +109,7 @@ html,body {
     width: 90%;
 }
 .sptop_menu {
+    display: none;
     background-color: #e7e7e7;
     position: relative;
     z-index: 10;

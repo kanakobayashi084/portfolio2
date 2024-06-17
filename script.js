@@ -1,3 +1,12 @@
+const header = document.querySelector('.header');
+window.addEventListener('scroll', function(){
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    header.classList.add('resize');
+  } else {
+    header.classList.remove('resize');
+  }
+});
+
 const hamburger = document.querySelector('.hamburger_menu');
 const nav = document.querySelector('.sptop_menu');
   hamburger.addEventListener('click', function() {
