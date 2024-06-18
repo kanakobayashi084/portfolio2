@@ -28,9 +28,16 @@ function slide_time () {
 
 setInterval(slide_time,5000);
 
-$('slider').slick({
-    autoplay:true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+$('.slide-news').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+});
+$('.slider').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+
 });
