@@ -34,6 +34,9 @@ html,body {
     font-size: 1.0rem;
     color: #FFFFFF;
 }
+.header.open {
+    background-color: #000000;
+}
 .txt_h_time {
     align-content: center;
     font-size: 14px;
@@ -109,9 +112,7 @@ html,body {
     width: 90%;
 }
 .sptop_menu {
-    display: none;
-    background-color: #e7e7e7;
-    position: relative;
+    position: absolute;
     z-index: 10;
     opacity: 0;
     visibility: hidden;
@@ -156,8 +157,17 @@ html,body {
     text-align: center;
 }
 .sptop_menu.open {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 170px;
+    background-color: #E7E7E7;
+    z-index: 0;
     opacity: 1;
     visibility: visible;
+}
+.page.open {
+    background-color: #000;
+    overflow: hidden;
 }
 /*main*/
 .main_head {
@@ -350,6 +360,7 @@ html,body {
     height: 100%;
 }
 .slide-news span {
+    margin-top: 10px;
     font-size: 12px;
     display: block;
     color: #000000;
@@ -564,9 +575,6 @@ html,body {
     display: flex;
     margin-bottom: 64px;
 }
-.pic_insta li {
-    margin: 0 10px;
-}
 .slider {
     display: flex;
 }
@@ -597,7 +605,7 @@ html,body {
 	content: "";
 	vertical-align: middle;
 }
-.button_prev2 {
+.button_prev {
     position: absolute;
     top: 50%;
     left: 0;

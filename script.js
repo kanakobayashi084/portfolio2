@@ -9,9 +9,13 @@ window.addEventListener('scroll', function(){
 
 const hamburger = document.querySelector('.hamburger_menu');
 const nav = document.querySelector('.sptop_menu');
+const infomation = document.querySelector('.header');
+const page = document.querySelector('.page');
   hamburger.addEventListener('click', function() {
     hamburger.classList.toggle("open"); //hamburgerにopenクラスを付け外しする
-    nav.classList.toggle("open"); 
+    nav.classList.toggle("open");
+    infomation.classList.toggle("open");
+    page.classList.toggle("open");
 });
 
 const img_src=["images/pctop_image1.png","images/pctop_image2.png","images/pctop_image3.png"];
@@ -32,12 +36,13 @@ $('.slide-news').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 1,
+  arrows: true,
 });
-$('.slider').slick({
+$('.insta-photo').slick({
   infinite: false,
   speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 2,
-
+  slidesToShow: 6,
+  slidesToScroll: 3,
+  arrows: true,
 });
