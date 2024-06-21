@@ -10,7 +10,7 @@ window.addEventListener('scroll', function(){
 const hamburger = document.querySelector('.hamburger_menu');
 const nav = document.querySelector('.sptop_menu');
 const infomation = document.querySelector('.header');
-const page = document.querySelector('.page');
+const page = document.querySelector('.body');
   hamburger.addEventListener('click', function() {
     hamburger.classList.toggle("open"); //hamburgerにopenクラスを付け外しする
     nav.classList.toggle("open");

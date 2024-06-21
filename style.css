@@ -3,6 +3,11 @@
 html,body {
     overflow-x: hidden;
 }
+.body.open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
 .header {
     width: 100%;
     color: #FFFFFF;
@@ -116,6 +121,7 @@ html,body {
     z-index: 10;
     opacity: 0;
     visibility: hidden;
+    height: 0;
 }
 .sptop_menu_inner {
     padding: 20px 10px;
@@ -156,18 +162,36 @@ html,body {
     display: block;
     text-align: center;
 }
-.sptop_menu.open {
-    margin-left: 0;
+.screen {
+    position: absolute;
     width: 100%;
-    margin-top: 170px;
+    height: 100%;
+    background-color: #000000;
+}
+.sptop_menu.open {
+    margin-top: 40px;
+    width: 100%;
     background-color: #E7E7E7;
     z-index: 0;
     opacity: 1;
     visibility: visible;
+    height: auto;
+    animation: fadein 0.2s linear forwards;
+}
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px); /* 開始時はマイナス指定 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* 終了時の位置をデフォルトに */
+    }
 }
 .page.open {
     background-color: #000;
     overflow: hidden;
+    overflow-y: hidden;
 }
 /*main*/
 .main_head {
