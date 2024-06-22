@@ -35,15 +35,15 @@ $('.slide-news').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow: '<img src="images/arrow-prev.png" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="images/arrow-next.png" class="slide-arrow next-arrow">',
+  prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow prev-arrow">',
+  nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow next-arrow">',
 });
 $('.insta-photo').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 6,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   arrows: true,
-  prevArrow: '<img src="images/arrow-prev.png" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="images/arrow-next.png" class="slide-arrow next-arrow">',
+  prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow2 prev-arrow">',
+  nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow2 next-arrow">',
 });

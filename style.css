@@ -194,6 +194,20 @@ html,body {
     overflow: hidden;
     overflow-y: hidden;
 }
+.slide-arrow {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 130px;
+    margin: 0 auto;
+}
+.slide-arrow2 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+}
 /*main*/
 .main_head {
     text-align: center;
@@ -377,7 +391,7 @@ html,body {
     display: flex;
 }
 .slide-news li {
-    margin-right: 10px;
+    margin:0 10px;
     text-decoration: none;
 }
 .side-news img {
