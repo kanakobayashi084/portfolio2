@@ -6,21 +6,20 @@ window.addEventListener('scroll', function(){
     header.classList.remove('resize');
   }
 });
-
 const hamburger = document.querySelector('.hamburger_menu');
 const nav = document.querySelector('.sptop_menu');
 const infomation = document.querySelector('.header');
 const page = document.querySelector('.body');
+const topscreen = document.querySelector('.screen');
   hamburger.addEventListener('click', function() {
     hamburger.classList.toggle("open"); //hamburgerにopenクラスを付け外しする
     nav.classList.toggle("open");
     infomation.classList.toggle("open");
     page.classList.toggle("open");
+    topscreen.classList.toggle("open");
 });
-
 const img_src=["images/pctop_image1.png","images/pctop_image2.png","images/pctop_image3.png"];
 let num = -1;
-
 function slide_time () {
     if (num === 2) {
         num = 0;
@@ -29,15 +28,15 @@ function slide_time () {
     }
     document.getElementById("slide-img").src = img_src[num];
 }
-
 setInterval(slide_time,5000);
-
 $('.slide-news').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
+  prevArrow: '<img src="images/arrow-prev.png" class="slide-arrow prev-arrow">',
+  nextArrow: '<img src="images/arrow-next.png" class="slide-arrow next-arrow">',
 });
 $('.insta-photo').slick({
   infinite: false,
@@ -45,4 +44,6 @@ $('.insta-photo').slick({
   slidesToShow: 6,
   slidesToScroll: 3,
   arrows: true,
+  prevArrow: '<img src="images/arrow-prev.png" class="slide-arrow prev-arrow">',
+  nextArrow: '<img src="images/arrow-next.png" class="slide-arrow next-arrow">',
 });
