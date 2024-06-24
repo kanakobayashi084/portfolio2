@@ -8,6 +8,11 @@ html,body {
     position: fixed;
     width: 100%;
 }
+@media (min-width: 800px){
+    .spmenulists {
+        display: none;
+    }
+}
 .header {
     width: 100%;
     color: #FFFFFF;
@@ -187,7 +192,7 @@ html,body {
 }
 .spdropdown_lists {
     display: none;
-    width: 100%;;
+    width: 100%;
 }
 .sptop_menulist li:hover .spdropdown_lists {
     z-index: 0;
@@ -913,6 +918,9 @@ html,body {
 }
 
 @media screen and (max-width: 768px) {
+    .body.open {
+        overflow-y: scroll;
+    }
     .header {
         width: 100%;
         color: #FFFFFF;
@@ -920,11 +928,63 @@ html,body {
         z-index: 1;
         background-color: #000000;
     }
+    .sptop_menu {
+        position: fixed;
+        right: -120%;
+    }
+    .sptop_menu_inner {
+        margin: 0;
+    }
+    .sptop_menulist {
+        display: block;
+        border: 0; 
+    }
+    .menulist {
+        width: 100%;
+        border: 1px solid #FFFFFF;
+        margin: 0 0 5px;
+    }
+    .menulist a {
+        display: flex;
+        padding: 10px;
+    }
+    .menulist img {
+        width: 20px;
+        height: 18px;
+        margin: 0 10px 0 0;
+    }
+    .menulist span {
+        font-size: 14px;
+    }
+    .menu_search {
+        width: 100%;
+    }
+    .spdropdown_lists {
+        display: none;
+    }
+    .screen.open {
+        display: none;
+    }
+    .sptop_menu.open {
+        right: 0;
+        margin-top: 40px;
+        width: 100%;
+        background-color: #E7E7E7;
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        height: 100vh;
+        animation: fadein 0.2s linear forwards;
+    }
     .txt_h_time {
         display: none;
     }
     .btn_lang {
         display: none;
+    }
+    .spbtn_lang {
+        color: #000000;
+        display: block;
     }
     .btn_time {
         display: none;
