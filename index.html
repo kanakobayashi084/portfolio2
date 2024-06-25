@@ -314,7 +314,7 @@
             </div>
         </nav>
         <div class="screen"></div>
-        <section class="wait_time">
+        <div class="wait_time">
             <div class="time_inner">
                 <h2>店舗・駐車場の待ち時間</h2>
                 <div class="wait_info">
@@ -379,6 +379,9 @@
                         <a href="#">English</a>
                         <ul class="lang_dropdownlists">
                             <li class="lang_dropdownlist">
+                                <a href="#">English</a>
+                            </li>
+                            <li class="lang_dropdownlist">
                                 <a href="#">日本語</a>
                             </li>
                             <li class="lang_dropdownlist">
@@ -395,8 +398,6 @@
                             </li>
                         </ul>
                     </li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
             <a href="#" class="btn_time">
@@ -410,57 +411,8 @@
                 <span></span>
                 <span></span>
             </div>
-        </div>      
-    </header>
-    <section id="wait_time">
-        <div class="inner">
-            <!--
-            <h2>店舗・駐車場の待ち時間</h2>
-            <div class="wait_load">
-                <p>！現在時刻を表示</p>
-                <p class="time">
-                    入場までの待ち時間：
-                    <span>すぐにご案内できます</span>
-                    <br>
-                    駐車場の待ち時間：
-                    <span>すぐに入庫できます。</span>
-                </p>
-                <ul>
-                    <li>龍上海本店:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>利尻らーめん味楽:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>六角家1994+:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>淺草 來々軒:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>通堂:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>こむらさき:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>一風堂【1994】:
-                        <span>(時間)分</span>
-                    </li>
-                    <li>スゴメンの待ち時間：
-                        <span>(時間)分</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="time_notes">
-                <p>上記待ち時間はあくまでも目安です。
-                    <br>
-                    各待ち時間は刻一刻と変わりますので あらかじめご了承下さい。
-                </p>
-            </div>
-            -->
         </div>
-    </section>
+    </header>
     <main>
         <div class="page">
             <div class="slide-wrapper">
@@ -501,53 +453,55 @@
                         <span class="wait_time2">10:30〜21:00</span>
                         <span class="wait_com">ラーメン店のラストオーダーは、閉館時間の30分前です。</span>
                     </p>
-                    <a href="#" class="btn_time_info">
-                        ラーメン店の待ち時間
-                    </a>
-                    <!--ホバーして表示
-                    <div class="wait_load">
-                        <p>(現在時刻を表示)現在</p>
-                        <ul>
-                            <li>龍上海本店:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>利尻らーめん味楽:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>六角家1994+:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>淺草 來々軒:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>通堂:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>こむらさき:
-                                <span>(時間)分</span>
-                            </li>
-                            <li>スゴメンの待ち時間：
-                                <span>(時間)分</span>
-                            </li>
-                        </ul>
-                    </div>
-                    -->
-                    <a href="#" class="btn_time_parking">
-                        <img alt src="">
-                        駐車場の待ち時間
-                    </a>
-                    <!--ホバーして表示
-                    <div class="wait_area">
-                        <p>(現在時刻を表示)現在</p>
-                        <p class="time">
-                            入場までの待ち時間：
-                            <span>すぐにご案内できます</span>
-                            <br>
-                            駐車場の待ち時間：
-                            <span>すぐに入庫できます。</span>
-                        </p>
-                    </div>
-                    -->
+                    <ul class="time_list">
+                        <li class="time_list-item">
+                            <a href="#" class="btn_time_info">
+                                ラーメン店の待ち時間
+                            </a>
+                            <div class="wait_load">
+                                <p>(現在時刻を表示)現在</p>
+                                <ul>
+                                    <li>龍上海本店:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>利尻らーめん味楽:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>六角家1994+:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>淺草 來々軒:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>通堂:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>こむらさき:
+                                        <span>(時間)分</span>
+                                    </li>
+                                    <li>スゴメンの待ち時間：
+                                        <span>(時間)分</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_time_parking">
+                                <img alt src="">
+                                駐車場の待ち時間
+                            </a>
+                            <div class="wait_area">
+                                <p>(現在時刻を表示)現在</p>
+                                <p class="time">
+                                    入場までの待ち時間：
+                                    <span>すぐにご案内できます</span>
+                                    <br>
+                                    駐車場の待ち時間：
+                                    <span>すぐに入庫できます。</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <nav class="top_menu">
