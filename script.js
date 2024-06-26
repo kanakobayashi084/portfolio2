@@ -23,13 +23,11 @@ const topscreen = document.querySelector('.screen');
 const btntime = document.querySelector('.btn_time');
 const wait = document.querySelector('.wait_time');
 const info = document.querySelector('.header');
-const waitpage = document.querySelector('.body');
 const waitscreen = document.querySelector('.screen2');
   btntime.addEventListener('click', function() {
     btntime.classList.toggle("open");
     wait.classList.toggle("open");
     info.classList.toggle("open");
-    waitpage.classList.toggle("open");
     waitscreen.classList.toggle("open");
 });
 

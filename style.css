@@ -83,7 +83,7 @@ html,body {
     line-height: 2;
 }
 .lang_dropdownlist:hover {
-    color: ;
+    color:#ffff00;
 }
 .lang_lists:hover .lang_dropdownlists {
     display: block;
@@ -196,7 +196,7 @@ html,body {
     text-align: center;
 }
 .sptop_menu.open {
-    margin-top: 40px;
+    margin-top: 60px;
     width: 100%;
     background-color: #E7E7E7;
     z-index: 10;
@@ -421,6 +421,20 @@ html,body {
     margin-top: 20px;
     color: #000000;
 }
+.time_list-item .wait_area {
+    background-color: #333333;
+    color: #fff;
+    position: absolute;
+    top:    100%;
+    display: none;
+    margin:20px 0;
+    z-index: 1;
+}
+.time_list-item:hover .wait_area {
+    display: block;
+}
+
+
 .waittime_info {
     background-color: #000;
     color: #FFFFFF;
@@ -429,6 +443,12 @@ html,body {
 .waittime_inner {
     display: flex;
     padding: 0 10px;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
 }
 .time_list {
     display: flex;
@@ -952,16 +972,11 @@ html,body {
 }
 
 @media screen and (max-width: 768px) {
-    .body.open {
-        overflow: auto;
-        position: static;
-    }
     .header {
-        width: 100%;
-        color: #FFFFFF;
-        position: fixed;
-        z-index: 1;
         background-color: #000000;
+    }
+    .header_inner {
+        padding: 0 10px;
     }
     .sptop_menu {
         position: fixed;
@@ -1008,8 +1023,9 @@ html,body {
         z-index: 10;
         opacity: 1;
         visibility: visible;
-        height: 100vh;
+        height: calc(100vh - 40px);
         animation: fadein 0.2s linear forwards;
+        overflow: auto;
     }
     .txt_h_time {
         display: none;
@@ -1032,6 +1048,19 @@ html,body {
     }
     .footer_text  {
         display: block;
+    }
+    .lang_lists {
+        border: 0;
+    }
+    .lang_list {
+        display: block;
+        border: 1px solid #999999;
+        color:  #999999;
+        border-radius: 20px;
+        padding: 10px 28px;
+        font-size: 14px;
+        text-align: center;
+        margin: 28px 50px;
     }
     .footer_text a {
         color: #666666;
@@ -1076,13 +1105,17 @@ html,body {
         flex-wrap: wrap;
     }
     .btn_time_info {
-        width: 40%;
         margin: 0;
         margin-top: 10px;
     }
     .btn_time_parking {
-        width: 40%;
         margin-top: 10px;
+    }
+    .time_list {
+        width: 100%;
+    }   
+    .time_list-item {
+        width: 100%;;
     }
     .top_menu {
         display: none;
@@ -1141,7 +1174,7 @@ html,body {
         margin: 0 10px;
     }
     .other_shop {
-    display: block;
+        display: block;
     }
     .othershop_box {
         width: 95%;
