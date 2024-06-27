@@ -1322,4 +1322,7 @@ html,body {
         text-decoration: none;
         position: relative;
     }
+    .spdropdown_lists::after {
+        display: none;
+    }
 }

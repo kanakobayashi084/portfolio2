@@ -31,13 +31,11 @@ const waitscreen = document.querySelector('.screen2');
     waitscreen.classList.toggle("open");
 });
 
-$(function(){
 $('.slide-img').slick({
   autoplay: true,
   autoplaySpeed: 5000,
   speed: 5000,
   slidesToShow: 1,
-  });
 });
 
 
