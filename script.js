@@ -21,7 +21,7 @@ const topscreen = document.querySelector('.screen');
 
 
 const btntime = document.querySelector('.btn_time');
-const wait = document.querySelector('.wait_time');
+const wait = document.querySelector('.header_waittime');
 const info = document.querySelector('.header');
 const waitscreen = document.querySelector('.screen2');
   btntime.addEventListener('click', function() {
@@ -31,29 +31,15 @@ const waitscreen = document.querySelector('.screen2');
     waitscreen.classList.toggle("open");
 });
 
-const img_src=["images/pctop_image1.png","images/pctop_image2.png","images/pctop_image3.png"];
-let num = -1;
-function slide_time () {
-    if (num === 2) {
-        num = 0;
-    } else {
-        num++;
-    }
-    document.getElementById("slide-img").src = img_src[num];
-}
-setInterval(slide_time,5000);
+$(function(){
+$('.slide-img').slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 5000,
+  slidesToShow: 1,
+  });
+});
 
-const spimg_src=["images/sptop_image1.png","images/sptop_image2.png","images/sptop_image3.png"];
-let spnum = -1;
-function spslide_time () {
-    if (spnum === 2) {
-        spnum = 0;
-    } else {
-        spnum++;
-    }
-    document.getElementById("spslide-img").src = spimg_src[spnum];
-}
-setInterval(slide_time,5000);
 
 $('.slide-news').slick({
   infinite: false,
@@ -73,4 +59,11 @@ $('.insta-photo').slick({
   arrows: true,
   prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow2 prev-arrow">',
   nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow2 next-arrow">',
+});
+
+$(function(){
+  $('.menulist').click(function(){
+    $(this).toggleClass('active');
+    $(this).next('.menulists').slideToggle();
+  });
 });
