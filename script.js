@@ -19,7 +19,6 @@ const topscreen = document.querySelector('.screen');
     topscreen.classList.toggle("open");
 });
 
-
 const btntime = document.querySelector('.btn_time');
 const wait = document.querySelector('.header_waittime');
 const info = document.querySelector('.header');
@@ -30,6 +29,19 @@ const waitscreen = document.querySelector('.screen2');
     info.classList.toggle("open");
     waitscreen.classList.toggle("open");
 });
+
+document.getElementById("view_time").innerHTML = getNow();
+function getNow() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const mon = now.getMonth() + 1;
+  const day = now.getDate();
+  const hour = now.getHours();
+  const min = now.getMinutes();
+  const sec = now.getSeconds();
+  const s = year + "年" + mon + "月" + day + "日" + hour + ":" + min + ":" + sec + "現在"; 
+  return s;
+}
 
 $('.slide-img').slick({
   autoplay: true,

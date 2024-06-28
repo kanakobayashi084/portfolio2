@@ -436,6 +436,7 @@ html,body {
 }
 .wait_load p {
     margin: 12px 0;
+    color: #FFFFFF;
 }
 .wait_load span {
     font-weight: bold;
@@ -475,7 +476,7 @@ html,body {
     display: none;
     margin: 20px 0;
     z-index: 1;
-    padding: 10px;
+    padding: 5px;
 }
 .time_list-item:hover .wait_area {
     display: block;
@@ -494,6 +495,7 @@ html,body {
 }
 .wait_area p {
     margin: 15px;
+    color: #FFFFFF;
 }
 .wait_area span {
     font-weight: bold;
@@ -1207,7 +1209,7 @@ html,body {
     }
     .topic_box ul {
         position: relative;
-        z-index: -10;
+        z-index: 10;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
