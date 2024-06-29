@@ -43,11 +43,12 @@ function getNow() {
   return s;
 }
 
-$('.slide-img').slick({
+$('.slide').slick({
   autoplay: true,
-  autoplaySpeed: 5000,
-  speed: 5000,
+  autoplaySpeed:  4000,
+  speed: 1,
   slidesToShow: 1,
+  arrows: false,
 });
 
 
