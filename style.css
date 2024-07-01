@@ -13,13 +13,13 @@ html,body {
         display: none;
     }
 }
+
 /*header*/
 .header {
     width: 100%;
     color: #FFFFFF;
     position: fixed;
-    z-index: 100;
-    text-shadow: 1px 2px 3px #808080;
+    z-index: 30;
 }
 .header.resize {
     width: 100%;
@@ -230,6 +230,7 @@ html,body {
     justify-content: space-between;
     margin: 0 auto;
     position: relative;
+    text-shadow: 1px 2px 3px #808080;
 }
 .header_logo {
     padding: 12px 0;
@@ -707,14 +708,14 @@ html,body {
     opacity: 1;
 }
 .info_title {
-    width: 50%;
+    width: 100%;
     display: block;
     text-decoration: none;
     color: #FFFFFF;
     position: absolute;
     text-align: center;
     padding: 60px 10px 90px 10px;
-    z-index: 10;
+    z-index: 2;
 }
 .info_link {
     display: block;
@@ -731,7 +732,7 @@ html,body {
     position: relative;
 }
 .top_lineup {
-    border-bottom: dashed 1px #666666;
+    border-bottom: dashed 1px #999999;
     padding: 60px 0;
 }
 .lineup_inner {
@@ -750,11 +751,10 @@ html,body {
 .lineup {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 30px;
+    justify-content: space-evenly;
 }
 .lineup_box {
-    padding: 18px;
     width: 30%;
     margin: 10px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
@@ -1168,7 +1168,8 @@ html,body {
         text-align: center;
         margin: 28px 50px;
     }
-    .footer_text a {
+    .spfooter_text a {
+        font-size: 12px;
         color: #666666;
         padding: 5px 10px;
         line-height: 2;
