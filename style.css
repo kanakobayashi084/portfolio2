@@ -26,7 +26,7 @@ html,body {
     color: #FFFFFF;
     background-color: #000;
     position: fixed;
-    z-index: 1;
+    z-index: 30;
 }
 /*sptopmenu*/
 .sptop_menu {
@@ -368,6 +368,7 @@ html,body {
     height: 100%;
     display: flex;
     transition: all 0.3s;
+    padding: 0;
 }
 .slide div {
     width: 33.3%;
@@ -378,7 +379,7 @@ html,body {
     width: 100%;
     height: 100%;
 }
-.slick-initialized .slick-slide {
+.slick-initialized .slick-slide .news-item {
     padding: 0 5px;
 }
 .pc { display: block !important; }
@@ -718,12 +719,12 @@ html,body {
     position: absolute;
     text-align: center;
     padding: 60px 10px 90px 10px;
-    z-index: 2;
 }
 .info_link {
     display: block;
     color: #FFFFFF;
     position: relative;
+    z-index: 2;
 }
 .info_link img {
     width: 50px;
