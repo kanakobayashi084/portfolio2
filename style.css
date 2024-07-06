@@ -42,6 +42,9 @@ html,body {
     text-align: left;
     position: relative;
 }
+.sptxt {
+    display: none;
+}
 .menu_search {
     background-color: #FFFFFF;
     width: 300px;
@@ -1078,6 +1081,23 @@ html,body {
     }
     .sptop_menu_inner {
         margin: 0;
+    }
+    .sptxt {
+        display: block;
+        color: #000000;
+        padding: 20px 0;
+        text-align: center;
+        line-height: 1;
+        margin: 0 auto;
+    }
+    .spwait_head {
+        display: block;
+    }
+    .spwait_time2 {
+        display: block;
+    }
+    .spwait_com {
+        display: block;
     }
     .sptop_menulist {
         display: block;
