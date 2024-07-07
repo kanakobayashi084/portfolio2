@@ -30,6 +30,12 @@ const waitscreen = document.querySelector('.screen2');
     waitscreen.classList.toggle("open");
 });
 
+$(function(){
+  $('sp_waittimemenu').click(function(){
+    $(this).toggleClass('active');
+  });
+});
+
 document.getElementById("view_time").innerHTML = getNow();
 function getNow() {
   const now = new Date();

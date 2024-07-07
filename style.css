@@ -24,9 +24,12 @@ html,body {
 .header.resize {
     width: 100%;
     color: #FFFFFF;
-    background-color: #000;
+    background-color: #000000;
     position: fixed;
     z-index: 30;
+}
+.spheader_waitload {
+    display: none;
 }
 /*sptopmenu*/
 .sptop_menu {
@@ -41,6 +44,9 @@ html,body {
     margin: 0 200px;
     text-align: left;
     position: relative;
+}
+.sp_waittimemenu {
+    display: none;    
 }
 .sptxt {
     display: none;
@@ -225,15 +231,19 @@ html,body {
 }
 /*header*/
 .header_inner {
+    background-color: transparent;
     padding: 14px 10px;
     max-width: 1180px;
     text-align: left;
+    margin: 0 auto;
+    text-shadow: 1px 2px 3px #808080;
+}
+.header_screen {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     position: relative;
-    text-shadow: 1px 2px 3px #808080;
+    z-index: 50;
 }
 .header_logo {
     padding: 12px 0;
@@ -1069,10 +1079,8 @@ html,body {
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        background-color: #000000;
-    }
     .header_inner {
+        background-color: #000000;
         padding: 0 10px;
     }
     .sptop_menu {
@@ -1082,22 +1090,79 @@ html,body {
     .sptop_menu_inner {
         margin: 0;
     }
+    .sp_waittimemenu {
+        display: block;
+        padding: 10.5px;
+        color:#000000;
+        font-size: 14px;
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        position: relative;
+    }
+    .sp_waittimemenu::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #999;
+        border-right: 1px solid #999;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 10px;
+        top: 30%;
+        margin-right: 10px;
+    }
     .sptxt {
         display: block;
         color: #000000;
         padding: 20px 0;
         text-align: center;
-        line-height: 1;
+        line-height: 1.5;
         margin: 0 auto;
     }
     .spwait_head {
-        display: block;
+        display: inline-block;
+        font-size: 12px;
+        background: url(images/icon/favicon_ramen1.png) no-repeat 0 50%;
+        background-size: auto 15px;
+        padding-left: 18px;
+        padding-top: 6px;   
     }
     .spwait_time2 {
         display: block;
+        font-weight: bold;
+        font-size: 17.5px;
     }
     .spwait_com {
         display: block;
+        font-size: 12px;
+    }
+    .spheader_waitload {
+        transition: .4s;
+        transform: translatex(200%);
+    }
+    .click-slide.active + .spheader_waitload {
+        transform: translatex(0);
+    }
+    .spheader_waitload ul {
+        display: block;
+        font-size: 14px;
+        color: #000000;
+    }
+    .spheader_waitload li {
+        line-height: 1.5;
+    }
+    .spheader_waitload .header_waittopic {
+        margin:10px 0; 
+    }
+    .spheader_waitload p {
+        margin-bottom: 14px;
+        color: #000000;
+        font-size: 14px;
+    }
+    .spheader_timenotes {
+        margin-top: 20px;
+        color: #000000;
     }
     .sptop_menulist {
         display: block;
@@ -1215,6 +1280,7 @@ html,body {
     }
     .pc { display: none !important; }
     .sp { display: block !important; }
+
     .waittime_inner {
         flex-wrap: wrap;
     }
