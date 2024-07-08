@@ -1084,11 +1084,23 @@ html,body {
         padding: 0 10px;
     }
     .sptop_menu {
-        position: fixed;
-        right: -120%;
+        display: block;
+        transition: .4s;
+        transform: translateX(200%);
     }
     .sptop_menu_inner {
         margin: 0;
+    }
+    .sptop_menu.open {
+        right: 0;
+        margin-top: 40px;
+        width: 100%;
+        background-color: #E7E7E7;
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        height: calc(100vh - 40px);
+        transform: translateX(0);
     }
     .sp_waittimemenu {
         display: block;
@@ -1137,7 +1149,8 @@ html,body {
         display: block;
         font-size: 12px;
     }
-    .spheader_waitload {
+    .click-slide + .spheader_waitload {
+        display: block;
         transition: .4s;
         transform: translatex(200%);
     }
@@ -1208,18 +1221,6 @@ html,body {
     }
     .screen.open {
         display: none;
-    }
-    .sptop_menu.open {
-        right: 0;
-        margin-top: 40px;
-        width: 100%;
-        background-color: #E7E7E7;
-        z-index: 10;
-        opacity: 1;
-        visibility: visible;
-        height: calc(100vh - 40px);
-        animation: fadein 0.2s linear forwards;
-        overflow: auto;
     }
     .txt_h_time {
         display: none;

@@ -31,7 +31,7 @@ const waitscreen = document.querySelector('.screen2');
 });
 
 $(function(){
-  $('sp_waittimemenu').click(function(){
+  $('.sp_waittimemenu').click(function(){
     $(this).toggleClass('active');
   });
 });
