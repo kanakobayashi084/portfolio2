@@ -1085,8 +1085,7 @@ html,body {
     }
     .sptop_menu {
         display: block;
-        transition: .4s;
-        transform: translateX(200%);
+        right: -120%;
     }
     .sptop_menu_inner {
         margin: 0;
@@ -1100,7 +1099,6 @@ html,body {
         opacity: 1;
         visibility: visible;
         height: calc(100vh - 40px);
-        transform: translateX(0);
     }
     .sp_waittimemenu {
         display: block;
@@ -1312,6 +1310,18 @@ html,body {
         margin: 0;
         padding: 30px 10px 0;
     }
+    .topics_inner {
+        margin: 0;
+    }
+    .slide-arrow {
+        width: 20px;
+        height: 20px;
+        top: 150px
+    }
+    .btn_more {
+        width: 80%;
+        margin: 0 auto;
+    }
     .topic_box ul {
         position: relative;
         z-index: 10;
@@ -1342,8 +1352,14 @@ html,body {
     .info_link p {
         font-size: 16px;
     }
+    .lineup {
+        margin: 0;
+    }
+    .lineup a {
+        padding: 0;
+    }
     .lineup_box {
-        width: 43%;
+        width: 45%;
     }
     .main_head {
         font-size: 24px;
@@ -1360,8 +1376,20 @@ html,body {
     .othershop_box {
         width: 95%;
     }
+    .pic_insta {
+        padding: 0;
+    }
+    .pic_insta ul {
+        margin: 0 0 48px 0;
+    }
+    .slide-arrow2 {
+        width: 20px;
+        height: 20px;
+        top: 45px;
+    }
     .topnews_inner {
         text-align: center;
+        margin: 0;
     }
     .topnews_body {
         display: flex;
@@ -1383,6 +1411,9 @@ html,body {
     }
     .accsess_body {
         display: block;
+    }
+    .address {
+        margin: 0;
     }
     .footer ul {
         display: block;
