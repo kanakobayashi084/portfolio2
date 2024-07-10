@@ -32,7 +32,7 @@ const waitscreen = document.querySelector('.screen2');
 
 $(function(){
   $('.sp_waittimemenu').click(function(){
-    $(this).toggleClass('active');
+    $('.sptop_menu_inner').toggleClass('right');
   });
 });
 

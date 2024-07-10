@@ -232,18 +232,20 @@ html,body {
 /*header*/
 .header_inner {
     background-color: transparent;
-    padding: 14px 10px;
-    max-width: 1180px;
     text-align: left;
-    margin: 0 auto;
     text-shadow: 1px 2px 3px #808080;
+    position: relative;
+    z-index: 50;
+}
+.header.open .header_inner{
+    background-color: #000000;
 }
 .header_screen {
+    max-width: 1180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    z-index: 50;
+    margin: 0 auto;
 }
 .header_logo {
     padding: 12px 0;
@@ -251,9 +253,6 @@ html,body {
 .header_logo span {
     font-size: 1.0rem;
     color: #FFFFFF;
-}
-.header.open {
-    background-color: #000000;
 }
 .txt_h_time {
     align-content: center;
@@ -1079,19 +1078,35 @@ html,body {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
     .header_inner {
         background-color: #000000;
         padding: 0 10px;
     }
     .sptop_menu {
         display: block;
-        right: -120%;
+        overflow: auto;
     }
     .sptop_menu_inner {
+        padding: 0;
         margin: 0;
+        width: 200%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: .3s;
+    }
+    .sptop_menu_inner.right {
+        left: -100%;
+    }
+    .spmenu-left,.spmenu-right {
+        width: 100%;
+        padding: 20px;
     }
     .sptop_menu.open {
-        right: 0;
         margin-top: 40px;
         width: 100%;
         background-color: #E7E7E7;
@@ -1102,14 +1117,14 @@ html,body {
     }
     .sp_waittimemenu {
         display: block;
-        padding: 10.5px;
+        padding: 10.5px 10.5px 10.5px 30px;
         color:#000000;
         font-size: 14px;
         border-top: 1px solid #dedede;
         border-bottom: 1px solid #dedede;
         position: relative;
     }
-    .sp_waittimemenu::after {
+    .arrowright::after {
         content: "";
         display: block;
         width: 10px;
@@ -1121,6 +1136,32 @@ html,body {
         right: 10px;
         top: 30%;
         margin-right: 10px;
+    }
+    .arrowleft::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #999;
+        border-right: 1px solid #999;
+        transform: rotate(-135deg);
+        position: absolute;
+        left: 0;
+        top: 30%;
+        margin-left: 10px;
+    }
+    .sp_waittimemenu2 {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #999;
+        border-right: 1px solid #999;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 10px;
+        top: 30%;
+        margin-left: 10px;
     }
     .sptxt {
         display: block;
@@ -1147,16 +1188,10 @@ html,body {
         display: block;
         font-size: 12px;
     }
-    .click-slide + .spheader_waitload {
+    .spheader_waitload  {
         display: block;
-        transition: .4s;
-        transform: translatex(200%);
-    }
-    .click-slide.active + .spheader_waitload {
-        transform: translatex(0);
     }
     .spheader_waitload ul {
-        display: block;
         font-size: 14px;
         color: #000000;
     }
@@ -1166,10 +1201,17 @@ html,body {
     .spheader_waitload .header_waittopic {
         margin:10px 0; 
     }
+    .spheader_waitload span {
+        font-weight: bold;
+    }
     .spheader_waitload p {
-        margin-bottom: 14px;
+        margin: 14px 0;
         color: #000000;
         font-size: 14px;
+        line-height: 1.5;
+    }
+    .spheader_waittopic {
+        margin-top: 14px;
     }
     .spheader_timenotes {
         margin-top: 20px;
