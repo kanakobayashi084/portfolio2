@@ -102,6 +102,11 @@ $('.insta-photo').slick({
   arrows: true,
   prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow2 prev-arrow">',
   nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow2 next-arrow">',
+  responsive: [{ // レスポンシブ対応に関する記述
+    breakpoint: 601, // ブレイクポイント
+    settings: { // その場合のオプション設定
+    slidesToShow: 4,
+  }}]
 });
 
 $(function(){

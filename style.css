@@ -41,7 +41,8 @@ html,body {
 }
 .sptop_menu_inner {
     padding: 20px 10px;
-    margin: 0 200px;
+    max-width: 1180px;
+    margin: 0 auto;
     text-align: left;
     position: relative;
 }
@@ -259,7 +260,6 @@ html,body {
     font-size: 14px;
     margin: 0 auto 0 2%;
     padding: 0 0 0 28px;
-    background: url(images/icon/logo_ramen2.png) no-repeat 0 50%;
 }
 /*btn_lang*/
 .btn_lang {
@@ -464,12 +464,18 @@ html,body {
 }
 .txt_h_time_sub {
     align-content: center;
-    font-size: 14px;
-    padding: 0 0 0 28px;
-    background: url(images/icon/logo_ramen2.png) no-repeat 0 50%;    
+    font-size: 14px;    
 }
+.wait_head {
+    padding: 0 0 0 28px;
+    background: url(images/icon/logo_ramen2.png) no-repeat 0 50%;
+}
+
 .wait_time2 {
     font-size: 20px;
+}
+.wait_com {
+    width: 100%;
 }
 .time_list-item .wait_load {
     background-color: #333333;
@@ -554,6 +560,7 @@ html,body {
     display: none;
 }
 .time_list {
+    width: 100%;
     display: flex;
     font-size: 10px;
 }
@@ -608,7 +615,8 @@ html,body {
     position: relative;
 }
 .topic_box_inner {
-    margin: 0 200px;
+    max-width: 1180px;
+    margin: 0 auto;
     padding: 60px 10px 0 10px;
 }
 .topic_box ul {
@@ -770,9 +778,6 @@ html,body {
 .shop_title {
     margin-bottom: 14px;
 }
-.lineup_box span {
-    display: flex;
-}
 .lineup_box img {
     position: relative;
     display: block;
@@ -801,13 +806,11 @@ html,body {
     font-weight: bold;
     text-align: center;
 }
-.shop_status span {
-    padding-left: 100px;
-}
 .icon_men {
     background-color: #FABE00;
     background-image: url(images/icon/point_ramen.png);
     width: 100%;
+    height: 100%;
     padding: 12px 4px 12px 25px;
     border-radius: 5px;
     margin: 0 2px 2px 0;
@@ -920,9 +923,9 @@ html,body {
 .topnews_inner {
     width: 100%;
     padding: 0 10px;
-    max-width: 1480px;
+    max-width: 1180px;
     text-align: left;
-    margin: 0 200px;
+    margin: 0 auto;
     position: relative;      
 }
 .topnews_body {
@@ -1117,6 +1120,7 @@ html,body {
         height: calc(100vh - 40px);
     }
     .sp_waittimemenu {
+        width: 95vw;
         display: block;
         padding: 10.5px 10.5px 10.5px 30px;
         color:#000000;
@@ -1219,6 +1223,7 @@ html,body {
         color: #000000;
     }
     .sptop_menulist {
+        width: 100%;
         display: block;
         border: 0;
         color: #666666;
@@ -1256,6 +1261,7 @@ html,body {
     }
     .menu_search {
         width: 100%;
+        margin: 0 0 20px 0;
     }
     .spdropdown_lists {
         display: none;
@@ -1327,6 +1333,24 @@ html,body {
 
     .waittime_inner {
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .txt_h_time_sub {
+        width: 100%;
+    }
+    .spwait_head {
+        display: inline-block;
+        font-size: 12px;
+        background: url(images/icon/favicon_ramen1.png) no-repeat 0 50%;
+        background-size: auto 15px;
+        padding-left: 18px;
+        padding-top: 6px;   
+    }
+    .wait_com {
+        display: block;
+        margin: 10px 0;
+        padding-left: 28px;
     }
     .btn_time_info {
         margin: 0;
@@ -1406,6 +1430,9 @@ html,body {
     .lineup_box {
         width: 45%;
     }
+    .shop_status span {
+        display: block;
+    }
     .main_head {
         font-size: 24px;
     }
@@ -1420,9 +1447,6 @@ html,body {
     }
     .othershop_box {
         width: 95%;
-    }
-    .pic_insta {
-        padding: 0;
     }
     .pic_insta ul {
         margin: 0 0 48px 0;
@@ -1451,6 +1475,14 @@ html,body {
         display: block;
         max-width: 100%;
     }
+    .txt_box span {
+        display: block;
+        text-align: left;
+    }
+    .accsess {
+        width: 100%;
+        margin-bottom: 30px;
+    }
     .top_accsess {
         padding: 0;
     }
@@ -1459,6 +1491,7 @@ html,body {
     }
     .address {
         margin: 0;
+        width: 100vw;
     }
     .footer ul {
         display: block;
@@ -1471,6 +1504,7 @@ html,body {
         border-left: 0;
     }
     .top_link {
+        background: #fbe5e7;
         padding: 10px 0;
     }
     .top_link ul {
@@ -1522,5 +1556,42 @@ html,body {
     }
     .hamburger_menu span:nth-of-type(3) {
         top: 21px;
+    }
+}
+@media screen and (max-width: 499px) {
+    .hamburger_menu {
+        top: 0;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .hamburger_menu span:nth-of-type(1) {
+        top: 3px;
+    }
+    .hamburger_menu span:nth-of-type(2) {
+        top: 9px;
+    }
+    .hamburger_menu span:nth-of-type(3) {
+        top: 15px;
+    }
+    .hamburger_menu span {
+        display: block;
+        position: absolute;
+        background-color: #FFFFFF;
+        left: 0;
+        width: 30px;
+        height: 1px;
+        border-radius: 1px;
+    }
+    .hamburger_menu.open span:nth-of-type(1) {
+        transform: translateY(9px) rotate(-45deg);
+        width: 100%;
+    }
+    .hamburger_menu.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .hamburger_menu.open span:nth-of-type(3) {
+        transform: translateY(-3px) rotate(45deg);
+        width: 100%;
     }
 }
