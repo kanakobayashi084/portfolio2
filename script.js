@@ -36,6 +36,19 @@ $(function(){
   });
 });
 
+document.getElementById("spview_time").innerHTML = getNow();
+function getNow() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const mon = now.getMonth() + 1;
+  const day = now.getDate();
+  const hour = now.getHours();
+  const min = now.getMinutes();
+  const sec = now.getSeconds();
+  const s = year + "年" + mon + "月" + day + "日" + hour + ":" + min + ":" + sec + "現在"; 
+  return s;
+}
+
 document.getElementById("view_time").innerHTML = getNow();
 function getNow() {
   const now = new Date();
@@ -77,7 +90,7 @@ function getNow() {
 
 $('.slide').slick({
   autoplay: true,
-  autoplaySpeed:  4000,
+  autoplaySpeed: 4000,
   speed: 1,
   slidesToShow: 1,
   arrows: false,
@@ -92,6 +105,11 @@ $('.slide-news').slick({
   arrows: true,
   prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow prev-arrow">',
   nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow next-arrow">',
+  responsive: [{
+    breakpoint: 601,
+    settings: {
+    slidesToShow: 3,
+  }}]
 });
 
 $('.insta-photo').slick({

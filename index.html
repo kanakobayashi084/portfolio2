@@ -17,10 +17,10 @@
                     <p class="sp_waittimemenu arrowright">店舗・駐車場の待ち時間</p>
                     <div class="sptxt">
                         <p class="sptxt_h_time_sub">
-                            <div>
+                            <span>
                                 <span class="spwait_head">本日の営業時間：</span>
                                 <span class="spwait_time2">10:30〜21:00</span>
-                            </div>
+                            </span>
                             <span class="spwait_com">ラーメン店のラストオーダーは、閉館時間の30分前です。</span>
                         </p>
                     </div>
@@ -324,7 +324,7 @@
                 <div class="spmenu-right">
                     <p class="sp_waittimemenu arrowleft">店舗・駐車場の待ち時間</p>
                     <div class="spheader_waitload">
-                        <p id="view_time"></p>
+                        <p id="spview_time"></p>
                         <p class="sptime">
                             入場までの待ち時間：
                             <span>すぐにご案内できます</span>
@@ -472,16 +472,16 @@
             <div class="slide-wrapper">
                 <div id="slide" class="slide">
                     <div>
-                        <img alt="スライド1" src="images/pctop_image1.png" id="slide-img" class="pc">
-                        <img alt="スライド1" src="images/sptop_image1.png" id="slide-img" class="sp">
+                        <img alt="スライド1" src="images/pctop_image1.png" class="pc">
+                        <img alt="スライド1" src="images/sptop_image1.png" class="sp">
                     </div>
                     <div>
-                        <img alt="スライド2" src="images/pctop_image2.png" id="slide-img" class="pc">
-                        <img alt="スライド2" src="images/sptop_image2.png" id="slide-img" class="sp">                  
+                        <img alt="スライド2" src="images/pctop_image2.png" class="pc">
+                        <img alt="スライド2" src="images/sptop_image2.png" class="sp">                  
                     </div>
                     <div>
-                        <img alt="スライド3" src="images/pctop_image3.png" id="slide-img" class="pc">
-                        <img alt="スライド3" src="images/sptop_image3.png" id="slide-img" class="sp"> 
+                        <img alt="スライド3" src="images/pctop_image3.png" class="pc">
+                        <img alt="スライド3" src="images/sptop_image3.png" class="sp"> 
                     </div>
                 </div>
                 <ul class="indicator" id="indicator">
@@ -492,16 +492,16 @@
             </div>
             <div class="waittime_info">
                 <div class="waittime_inner">
-                    <div>
-                        <p class="txt_h_time_sub">
+                    <p>
+                        <span class="txt_h_time_sub">
                             <span class="wait_head">
                                 本日の営業時間：
                             </span>
                             <span class="wait_time2">10:30〜21:00</span>
                             <span class="wait_com">ラーメン店のラストオーダーは、閉館時間の30分前です。</span>
-                        </p>
-                    </div>
-                    <div>
+                        </span>
+                    </p>
+                    <div class="botton-time_list">
                         <ul class="time_list">
                             <li class="time_list-item">
                                 <a href="#" class="btn_time_info">
@@ -885,37 +885,37 @@
             <ul>
                 <li>
                     <a href="#" class="info_link">
-                        <span class="info_title">
+                        <div class="info_title">
                             <img alt src="images/icon/point_ramenmakingclass.png">
                             <p>RAMEN MAKING CLASS</p>
-                        </span>
+                        </div>
                     </a>
                     <img alt="RAMEN MAKING CLASS" class="topic" src="images/ramenshare.jpg">
                 </li>
                 <li>
                     <a href="#" class="info_link">
-                        <span class="info_title">
+                        <div class="info_title">
                             <img alt src="images/icon/point_rapedia.png">
                             <p>RAPEDIA</p>
-                        </span>
+                        </div>
                     </a>
                     <img alt="RAPEDIA" class="topic" src="images/rapedia.jpg">
                 </li>
                 <li>
                     <a href="#" class="info_link">
-                        <span class="info_title">
+                        <div class="info_title">
                             <img alt src="images/icon/point_sugomenlab.png">
                             <p>SUGOMEN LAB</p>
-                        </span>
+                        </div>
                     </a>
                     <img alt="SUGOMEN LAB" class="topic" src="images/sugomenlub.jpg">
                 </li>
                 <li>
                     <a href="#" class="info_link">
-                        <span class="info_title">
+                        <div class="info_title">
                             <img alt src="images/icon/point_event.png">
                             <p>EVENT</p>
-                        </span>
+                        </div>
                     </a>
                     <img alt="EVENT" class="topic" src="images/Event.jpg">
                 </li>
@@ -1318,9 +1318,6 @@
                 </li>
                 <li>
                     <a href="#">ご利用案内</a>
-                </li>
-                <li>
-                    <a href="#">会社概要</a>
                 </li>
                 <li>
                     <a href="#">会社概要</a>
