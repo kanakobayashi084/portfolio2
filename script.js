@@ -94,6 +94,7 @@ $('.slide').slick({
   speed: 1,
   slidesToShow: 1,
   arrows: false,
+  dots: true,
 });
 
 
@@ -103,6 +104,7 @@ $('.slide-news').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
+  infinite: true,
   prevArrow: '<img src="images/icon/arrow-prev.png" class="slide-arrow prev-arrow">',
   nextArrow: '<img src="images/icon/arrow-next.png" class="slide-arrow next-arrow">',
   responsive: [{

@@ -399,34 +399,6 @@ html,body {
  
 
 
-.indicator {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    column-gap: 10px;
-    z-index: 0;
-    justify-content: center;
-    align-items: center;
-}
-.indicator li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    list-style: none;
-    background-color: #FFFFFF;
-    border: 1px #000000 solid;
-    cursor: pointer;
-}
-.indicator li.active{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    list-style: none;
-    background-color: #CC0000;
-    border: 1px #000000 solid;
-    cursor: pointer;
-}
 .waittime_info {
     background-color: #000;
     color: #FFFFFF;
