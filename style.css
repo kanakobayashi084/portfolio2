@@ -696,13 +696,16 @@ html,body {
     flex-wrap: wrap;
 }
 .ramen_infomation li {
-    overflow: hidden;
     width: 50%;
     opacity: 0.8;
+    overflow: hidden;
 }
+
 .ramen_infomation li:hover {
     opacity: 1;
+    transform:scale(1.005);
 }
+
 .info_title {
     width: 100%;
     display: block;
@@ -828,6 +831,7 @@ html,body {
     text-align: center;
     text-decoration: none;
     font-size: 12px;
+    line-height: 1.5;
 }
 .top_othershop {
     padding: 60px 0;
