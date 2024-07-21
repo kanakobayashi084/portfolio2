@@ -94,7 +94,6 @@ $('.slide').slick({
   speed: 1,
   slidesToShow: 1,
   arrows: false,
-  dots: true,
 });
 
 
